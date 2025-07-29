@@ -28,31 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            dataGridViewCakes = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCakes).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // dataGridViewCakes
             // 
-            button1.Location = new Point(149, 178);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            dataGridViewCakes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCakes.Location = new Point(103, 96);
+            dataGridViewCakes.Name = "dataGridViewCakes";
+            dataGridViewCakes.RowHeadersWidth = 51;
+            dataGridViewCakes.Size = new Size(609, 188);
+            dataGridViewCakes.TabIndex = 0;
+            dataGridViewCakes.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(dataGridViewCakes);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load_1;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCakes).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
+        private DataGridView dataGridViewCakes;
     }
 }
