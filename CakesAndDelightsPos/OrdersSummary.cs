@@ -94,7 +94,6 @@ namespace CakesAndDelightsPos
                 }
 
                 Cursor.Current = Cursors.WaitCursor; //  Show a loading cursor
-
                 LoadSummary();    // Load the summary into ListView
 
                 // Switch groups AFTER loading  ,// Switch screens: Hide summary entry, show placed orders
